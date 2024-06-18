@@ -9,7 +9,35 @@ The IBMIJASPER library packages a forked copy of the Java files that are part of
 You must install the QShell on i library - QSHONI  
 https://github.com/richardschoen/qshoni
 
-You must download and install the IBMIJASPER library  
+# Installing IBMIJASPER library via save file and creating command objects
+
+Download the **ibmijasper.savf** save file from the selected releases page. 
+
+https://github.com/richardschoen/ibmijasper/releases   
+
+Upload the **ibmijasper.savf** to the IFS and place it in **/tmp/ibmijasper.savf**
+
+Run the following commands to copy the save file from the IFS into a SAVF object
+
+`CRTSAVF FILE(QGPL/IBMIJASPER)`
+ 
+`CPYFRMSTMF FROMSTMF('/tmp/ibmijasper.savf') TOMBR('/qsys.lib/qgpl.lib/ibmijasper.file') MBROPT(*REPLACE) CVTDTA(*NONE)`
+
+Restore the IBMIJASPER library
+
+`RSTLIB SAVLIB(IBMIJASPER) DEV(*SAVF) SAVF(QGPL/IBMIJASPER)`
+
+Build the IBMIJASPER commands
+
+ ***(Important co CHGJOB CCSID(37) before building from SAVF)***
+
+`CHGJOB CCSID(37)`
+
+`ADDLIBLE IBMIJASPER`
+
+`CRTCLPGM PGM(IBMIJASPER/SRCBLDC) SRCFILE(IBMIJASPER/SOURCE) SRCMBR(SRCBLDC) REPLACE(*YES)`
+
+`CALL PGM(IBMIJASPER/SRCBLDC)`
 
 # Training and Support for IBMIJASPER
 If you desire assistance in setting up the IBMIJASPER library so you can generate reports and data exports from your IBM i system, feel free to reach out about consulting assistance.  
