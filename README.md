@@ -1,4 +1,4 @@
-# IBM i JasperReports Report Generation Commands  
+i# IBM i JasperReports Report Generation Commands  
 Since 2007 I have done a lot of work building reports and forms using the JasperReports library in conjunction with IBM i, so I can attest to Jasper as a stable Java based report and form creation engine.   
 
 This GitHub repository will be used to house a few sample CL commands, Java sample code and Jasper report templates for generating JasperReports from the IBM i command line or as part of an existing application if desired.    
@@ -19,7 +19,7 @@ https://en.wikipedia.org/wiki/JasperReports
 JasperReports Studio and the JasperReports Java library are available for FREE from Tibco.  
 https://community.jaspersoft.com/download-jaspersoft/community-edition   
 
-## Pete Helgren's Original Repos
+### Pete Helgren's Original Repos
 RPG Report Generator Java Project    
 https://github.com/phelgren/RRE_java   
 
