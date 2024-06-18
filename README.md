@@ -39,6 +39,25 @@ Build the IBMIJASPER commands
 
 `CALL PGM(IBMIJASPER/SRCBLDC)`
 
+The following command restores the Java objects to IFS folder: `/ibmijasper`   
+`IBMIJASPER/RSTRRE`
+
+If all runs successfully the IBMIJASPER library commands should be ready to use.   
+
+# After install initial test command
+The RREGEN command should create a sample PDF report based on the IBMIJASPER/EMPLOYEE table.   
+
+The output file should gen generated to file name: `/tmp/EmployeeListing.pdf`
+
+`ADDLIBLE IBMIJASPER`
+
+`RREGEN LIBLIST(IBMIJASPER)                                     
+        RPTNAME('/ibmijasper/reports/templates/Employee_Listing.jrxml')                                      
+        RPTOUTPUT('/tmp/Employee_listing') OUTPUTFMT(PDF)   
+        REPLACE(*YES) DSPSTDOUT(*YES)`
+
+After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
+
 # Training and Support for IBMIJASPER
 If you desire assistance in setting up the IBMIJASPER library so you can generate reports and data exports from your IBM i system, feel free to reach out about consulting assistance.  
 
