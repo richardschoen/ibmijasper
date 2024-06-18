@@ -5,7 +5,7 @@ This GitHub repository will be used to house a few sample CL commands, Java samp
 
 The IBMIJASPER library packages a forked copy of the Java files that are part of Pete Helgren's Report Generator project.   
 
-The library also contains the RREGEN command for generating a JasperReport from a Jasper JRXML template file.   
+The library also contains the `RREGEN` CL command for generating a JasperReport from a Jasper JRXML template file.   
 
 :exclamation: If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms. Or you may need assistance with creating report templates or integrating JasperReports with your IBM i work streams.  
 
