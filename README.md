@@ -7,7 +7,13 @@ The IBMIJASPER library packages a forked copy of the Java files that are part of
 
 The library also contains the RREGEN command for generating a JasperReport from a Jasper JRXML template file.   
 
-:exclamation: If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms via the links I've placed below.  
+:exclamation: If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms. Or you may need assistance with creating report templates or integrating JasperReports with your IBM i work streams.  
+
+# Training, Support and Consulting for IBMIJASPER and JasperReports
+If you desire assistance in setting up the IBMIJASPER library or creating report templates so you can generate reports and data exports from your IBM i system with Jasper Reports, feel free to reach out about consulting assistance.  
+
+Web Site: https://www.mobigogo.net   
+Email: richard@mobigogo.net -or- richard@richardschoen.net   
 
 # Pre-requisites
 You must install the QShell on i library - QSHONI  
@@ -61,12 +67,6 @@ The output file should gen generated to file name: `/tmp/EmployeeListing.pdf`
         REPLACE(*YES) DSPSTDOUT(*YES)`
 
 After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
-
-# Training, Support and Consulting for IBMIJASPER and JasperReports
-If you desire assistance in setting up the IBMIJASPER library so you can generate reports and data exports from your IBM i system, feel free to reach out about consulting assistance.  
-
-Web Site: https://www.mobigogo.net   
-Email: richard@mobigogo.net -or- richard@richardschoen.net   
 
 # Links
 JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
