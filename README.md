@@ -19,7 +19,7 @@ https://en.wikipedia.org/wiki/JasperReports
 JasperReports Studio and the JasperReports Java library are available for FREE from Tibco.  
 https://community.jaspersoft.com/download-jaspersoft/community-edition   
 
-RPG Report Generator Jave Project    
+RPG Report Generator Java Project    
 https://github.com/phelgren/RRE_java   
 
 RPG Report Engine Project    
