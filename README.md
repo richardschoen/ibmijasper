@@ -7,7 +7,7 @@ The IBMIJASPER library packages a forked copy of the Java files that are part of
 
 The library also contains the RREGEN command for generating a JasperReport from a Jasper JRXML template file.   
 
-If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms via the links I've placed below.  
+:exclamation: If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms via the links I've placed below.  
 
 # Pre-requisites
 You must install the QShell on i library - QSHONI  
