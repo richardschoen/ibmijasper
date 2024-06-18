@@ -29,7 +29,7 @@ Restore the IBMIJASPER library
 
 Build the IBMIJASPER commands
 
- ***(Important co CHGJOB CCSID(37) before building from SAVF)***
+ ***(Important to CHGJOB CCSID(37) before building from SAVF)***
 
 `CHGJOB CCSID(37)`
 
