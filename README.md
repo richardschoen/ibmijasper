@@ -1,10 +1,15 @@
-i# IBM i JasperReports Report Generation Commands  
+# IBM i JasperReports Report Generation Commands  
 Since 2007 I have done a lot of work building reports and forms using the JasperReports library in conjunction with IBM i, so I can attest to Jasper as a stable Java based report and form creation engine.   
 
 This GitHub repository will be used to house a few sample CL commands, Java sample code and Jasper report templates for generating JasperReports from the IBM i command line or as part of an existing application if desired.    
 
 The IBMIJASPER library packages a forked copy of the Java files that are part of Pete Helgren's Report Generator project.   
 
+# Pre-requisites
+You must install the QShell on i library - QSHONI  
+https://github.com/richardschoen/qshoni
+
+You must download and install the IBMIJASPER library  
 
 # Training and Support for IBMIJASPER
 If you desire assistance in setting up the IBMIJASPER library so you can generate reports and data exports from your IBM i system, feel free to reach out about consulting assistance.  
