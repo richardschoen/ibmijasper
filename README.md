@@ -5,6 +5,10 @@ This GitHub repository will be used to house a few sample CL commands, Java samp
 
 The IBMIJASPER library packages a forked copy of the Java files that are part of Pete Helgren's Report Generator project.   
 
+The library also contains the RREGEN command for generating a JasperReport from a Jasper JRXML template file.   
+
+If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms via the links I've placed below.  
+
 # Pre-requisites
 You must install the QShell on i library - QSHONI  
 https://github.com/richardschoen/qshoni
@@ -58,7 +62,7 @@ The output file should gen generated to file name: `/tmp/EmployeeListing.pdf`
 
 After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
 
-# Training and Support for IBMIJASPER
+# Training, Support and Consulting for IBMIJASPER and JasperReports
 If you desire assistance in setting up the IBMIJASPER library so you can generate reports and data exports from your IBM i system, feel free to reach out about consulting assistance.  
 
 Web Site: https://www.mobigogo.net   
