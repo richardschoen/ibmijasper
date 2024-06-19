@@ -76,10 +76,10 @@ The output file should gen generated to file name: `/tmp/EmployeeListing.pdf`
 `ADDLIBLE IBMIJASPER`
 
 `
-RREGEN LIBLIST(IBMIJASPER)                                     
-        RPTNAME('/ibmijasper/reports/templates/Employee_Listing.jrxml')                                      
-        RPTOUTPUT('/tmp/Employee_listing') OUTPUTFMT(PDF)   
-        REPLACE(*YES) DSPSTDOUT(*YES)
+RREGEN LIBLIST(IBMIJASPER)  
+RPTNAME('/ibmijasper/reports/templates/Employee_Listing.jrxml')  
+RPTOUTPUT('/tmp/Employee_listing') OUTPUTFMT(PDF)  
+REPLACE(*YES) DSPSTDOUT(*YES)  
 `
 
 After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
