@@ -15,6 +15,20 @@ If you desire assistance in setting up the IBMIJASPER library or creating report
 Web Site: https://www.mobigogo.net   
 Email: richard@mobigogo.net -or- richard@richardschoen.net   
 
+# Links
+JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
+https://en.wikipedia.org/wiki/JasperReports   
+
+JasperReports Studio and the JasperReports Java library are available for FREE from Tibco.  
+https://community.jaspersoft.com/download-jaspersoft/community-edition   
+
+### Pete Helgren's Original Repos
+RPG Report Generator Java Project    
+https://github.com/phelgren/RRE_java   
+
+RPG Report Engine Project    
+https://github.com/phelgren/RRE    
+
 # Pre-requisites
 You must install the QShell on i library - QSHONI  
 https://github.com/richardschoen/qshoni
@@ -69,18 +83,3 @@ RREGEN LIBLIST(IBMIJASPER)
 `
 
 After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
-
-# Links
-JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
-https://en.wikipedia.org/wiki/JasperReports   
-
-JasperReports Studio and the JasperReports Java library are available for FREE from Tibco.  
-https://community.jaspersoft.com/download-jaspersoft/community-edition   
-
-### Pete Helgren's Original Repos
-RPG Report Generator Java Project    
-https://github.com/phelgren/RRE_java   
-
-RPG Report Engine Project    
-https://github.com/phelgren/RRE    
-
