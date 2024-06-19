@@ -1,13 +1,15 @@
 # IBM i JasperReports Report Generation Commands  
+This GitHub repository will be used to house a few sample CL commands, Java sample code and Jasper report templates for generating JasperReports from the IBM i command line or as part of an existing application if desired.    
+
 Since 2007 I have done a lot of work building reports and forms using the JasperReports library in conjunction with IBM i, so I can attest to Jasper as a stable Java based report and form creation engine.   
 
-This GitHub repository will be used to house a few sample CL commands, Java sample code and Jasper report templates for generating JasperReports from the IBM i command line or as part of an existing application if desired.    
+There used to be a community edition of Jasper Server available from JasperSoft for FREE but the that version has been discontinued. But never fear because you can still use the JasperReports library to generate reports without JasperServer. And JasperReports Studio is still FREE and can be used to design and build reports with our without a server. And the reports can be run from IBM i or other platforms.
 
 The IBMIJASPER library packages a forked copy of the Java files that are part of Pete Helgren's Report Generator project.   
 
 The library also contains the `RREGEN` CL command for generating a JasperReport from a Jasper JRXML template file.   
 
-:exclamation: If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms. Or you may need assistance with creating report templates or integrating JasperReports with your IBM i work streams.  
+:exclamation: If you haven't used JasperReports before, you may want to reach out for training, consulting and mentoring on getting started with JasperReports on IBM i or other platforms. Or you may need assistance with creating report templates or integrating JasperReports with your IBM i work streams.  
 
 # Training, Support and Consulting for IBMIJASPER and JasperReports
 If you desire assistance in setting up the IBMIJASPER library or training to create report and form templates so you can generate reports, forms and data exports from your IBM i system with Jasper Reports, feel free to reach out about consulting assistance.  
