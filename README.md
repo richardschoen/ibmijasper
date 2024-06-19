@@ -16,11 +16,11 @@ Web Site: https://www.mobigogo.net
 Email: richard@mobigogo.net -or- richard@richardschoen.net   
 
 # Links
-JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
-https://en.wikipedia.org/wiki/JasperReports   
-
 JasperReports Studio and the JasperReports Java library are available for FREE from Tibco.  
 https://community.jaspersoft.com/download-jaspersoft/community-edition   
+
+JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
+https://en.wikipedia.org/wiki/JasperReports   
 
 ### Pete Helgren's Original Repos
 RPG Report Generator Java Project    
