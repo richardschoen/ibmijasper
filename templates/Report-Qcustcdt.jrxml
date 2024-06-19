@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Employee_Listing" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4f97802c-4f03-498c-8f95-eb0bcfdb54fb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.jasperserver.reportUnit" value="/Employee_Listing_Sample"/>
+	<property name="ireport.jasperserver.url" value="http://10.0.10.205:9095/jasperserver/services/repository"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jt400"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[SELECT * FROM "QIWS"."QCUSTCDT" QCUSTCDT]]>
+	</queryString>
+	<field name="CUSNUM" class="java.lang.String"/>
+	<field name="LSTNAM" class="java.lang.String"/>
+	<field name="INIT" class="java.lang.String"/>
+	<field name="STREET" class="java.lang.String"/>
+	<field name="CITY" class="java.lang.String"/>
+	<field name="STATE" class="java.lang.String"/>
+	<field name="ZIPCOD" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="184" y="0" width="436" height="62" uuid="6eec1fe6-5ca1-4952-b3cc-1835271f9b01"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Customer Listing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="296" y="62" width="196" height="22" uuid="2522427e-ba1e-4cac-8fba-d7c55689bd89"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[JasperReports on IBMi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="d6f246da-1c4f-4f3a-bf3a-2af677e1de38"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="100" height="15" forecolor="#736343" uuid="ac06c246-7c54-45c6-af9c-53ca64dd518e"/>
+				<text><![CDATA[Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="100" y="0" width="115" height="15" forecolor="#736343" uuid="7bbf3681-1b18-4214-b36f-1fe6ac98af01"/>
+				<text><![CDATA[Last name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="215" y="0" width="184" height="15" forecolor="#736343" uuid="f2ca97e0-51dc-4046-b3c1-89ab53812536"/>
+				<text><![CDATA[Init]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="281" y="0" width="186" height="15" forecolor="#736343" uuid="f0cc3e0e-be55-46c4-a26a-8de44a1c567b"/>
+				<text><![CDATA[Street]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="453" y="0" width="80" height="15" forecolor="#736343" uuid="e7268919-bacb-402c-8290-461ff065e9d6"/>
+				<text><![CDATA[City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="533" y="0" width="69" height="15" forecolor="#736343" uuid="edff7e7a-e3b0-427b-86a9-0b85b54d8b2b"/>
+				<text><![CDATA[State]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="602" y="1" width="47" height="15" forecolor="#736343" uuid="6eac3597-685c-41e3-ade3-3244a29274a3"/>
+				<text><![CDATA[Zip]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="8f3945ac-9a5d-4adb-8bfd-463ce3de88eb"/>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="0" y="0" width="100" height="15" uuid="128f3eed-b97c-4567-af8a-80d9df26807f"/>
+					<textFieldExpression><![CDATA[$F{CUSNUM}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="100" y="0" width="115" height="15" uuid="1371c8ef-59e7-4a51-aad8-9c1c083753f5"/>
+					<textFieldExpression><![CDATA[$F{LSTNAM}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="215" y="0" width="65" height="15" uuid="fc38d4b6-221e-4e22-8c15-b4b737831e8c"/>
+					<textFieldExpression><![CDATA[$F{INIT}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="281" y="0" width="169" height="15" uuid="398154a2-fc1d-4906-bf71-a926ec6a4d6e"/>
+					<textFieldExpression><![CDATA[$F{STREET}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="453" y="0" width="80" height="15" uuid="c98f69f5-5391-4c9c-9967-b802393e4b0f"/>
+					<textFieldExpression><![CDATA[$F{CITY}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="533" y="0" width="69" height="15" uuid="17e7cded-8d99-45c7-b1c7-d9a823a026c2"/>
+					<textFieldExpression><![CDATA[$F{STATE}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" x="602" y="0" width="47" height="15" uuid="822efd82-e506-49a0-b3bd-e6d72c715499"/>
+					<textFieldExpression><![CDATA[$F{ZIPCOD}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="cb0bc3ef-90af-4a8f-b903-d9576a5d480a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="4603c2e2-8d25-4f65-a091-343a34530c31"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="e2c57a43-d61f-4736-9d92-7152b8768090"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="dc066923-8d9d-42b5-a7b2-b9305719d218"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="89d214d4-a772-465a-ad28-55a542af2bda"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
