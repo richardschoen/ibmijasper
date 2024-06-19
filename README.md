@@ -10,17 +10,29 @@ The library also contains the `RREGEN` CL command for generating a JasperReport 
 :exclamation: If you haven't used JasperReports before, you may want to reach out for training or consulting on getting started with JasperReports on IBM i or other platforms. Or you may need assistance with creating report templates or integrating JasperReports with your IBM i work streams.  
 
 # Training, Support and Consulting for IBMIJASPER and JasperReports
-If you desire assistance in setting up the IBMIJASPER library or creating report templates so you can generate reports and data exports from your IBM i system with Jasper Reports, feel free to reach out about consulting assistance.  
+If you desire assistance in setting up the IBMIJASPER library or training to create report and form templates so you can generate reports and data exports from your IBM i system with Jasper Reports, feel free to reach out about consulting assistance.  
 
 Web Site: https://www.mobigogo.net   
 Email: richard@mobigogo.net -or- richard@richardschoen.net   
 
-# Links
+# JasperReports Links
+JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
+https://en.wikipedia.org/wiki/JasperReports   
+
 JasperReports Studio and the JasperReports Java library are available for FREE from Tibco.  
 https://community.jaspersoft.com/download-jaspersoft/community-edition   
 
-JasperReports is an open-source report generation library for Java that has been available since 2001. Jaspersoft was acquired by Tibco in 2014.   
-https://en.wikipedia.org/wiki/JasperReports   
+JasperSoft - Getting Started   
+https://www.jaspersoft.com/getting-started
+
+Learning JasperReports - Tutorialspoint   
+https://www.tutorialspoint.com/jasper_reports   
+
+Building reports in Java with JasperReports - Udemy Class   
+https://www.udemy.com/course/build-java-reports-with-jasperreports-and-jasperstudio   
+
+Google search: ```learning jasperreports```   
+https://www.google.com/search?q=learning+jasperreports&oq=learning+jasperreports   
 
 ### Pete Helgren's Original Repos
 RPG Report Generator Java Project    
