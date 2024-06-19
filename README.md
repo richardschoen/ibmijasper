@@ -82,7 +82,7 @@ The following command restores the Java objects to IFS folder: ```/ibmijasper```
 
 If all runs successfully the IBMIJASPER library commands should be ready to use.   
 
-# After install initial test command
+# Test RREGEN command after install initial test command
 The sample call to the RREGEN command listed below should create a sample PDF report based on the ```IBMIJASPER/EMPLOYEE``` table.   
 
 The output file should gen generated to file name: ```/tmp/EmployeeListing.pdf```
@@ -96,3 +96,29 @@ RPTOUTPUT('/tmp/Employee_listing') OUTPUTFMT(PDF) REPLACE(*YES) DSPSTDOUT(*YES)
 ```
 
 After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
+
+# RREGEN command parms
+
+**Overview** - The RREGEN CL command can be used to execute a JasperReports JRXML report template and output the appropriate PDF or other format.   
+
+**HOSTNAME** - Enter the host name database to connect to. Use localhost for local IBM i database. Default: ```localhost```    
+
+**LIBLIST** - Enter the library list for the jt400.jar connection to use. Default: ```QGPL```   
+
+**USERNAME** - IBM i user id to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
+
+**PASSWORD** - IBM i password to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
+
+**RPTNAME** - Enter the IFS file path for the JRXML template file to compile and execute.   
+
+**RPTOUTPUT** - Enter the IFS file path for the output file you would like to generate without the file extension. The file extension is derived from the Output format parameter.   
+
+**OUTPUTFMT** - Specify the desired Jasper output format. Default: PDF.   
+
+**REPLACE** - Replace the output file if it already exists. Default: ```*NO```    
+
+**DSPSTDOUT** - Display the outfile contents. Nice when debugging. 
+
+**PRTSTDOUT** - Print STDOUT to a spool file. Use this if you want a spool file of the log output.
+
+**DLTSTDOUT** - This option insures that the STDOUT IFS temp files get cleaned up after processing. All IFS log files get created in the /tmp/qsh directory.   
