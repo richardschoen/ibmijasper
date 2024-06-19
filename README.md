@@ -43,28 +43,28 @@ Upload the **ibmijasper.savf** to the IFS and place it in **/tmp/ibmijasper.savf
 
 Run the following commands to copy the save file from the IFS into a SAVF object
 
-`CRTSAVF FILE(QGPL/IBMIJASPER)`
+```CRTSAVF FILE(QGPL/IBMIJASPER)```
  
-`CPYFRMSTMF FROMSTMF('/tmp/ibmijasper.savf') TOMBR('/qsys.lib/qgpl.lib/ibmijasper.file') MBROPT(*REPLACE) CVTDTA(*NONE)`
+```CPYFRMSTMF FROMSTMF('/tmp/ibmijasper.savf') TOMBR('/qsys.lib/qgpl.lib/ibmijasper.file') MBROPT(*REPLACE) CVTDTA(*NONE)```
 
 Restore the IBMIJASPER library
 
-`RSTLIB SAVLIB(IBMIJASPER) DEV(*SAVF) SAVF(QGPL/IBMIJASPER)`
+```RSTLIB SAVLIB(IBMIJASPER) DEV(*SAVF) SAVF(QGPL/IBMIJASPER)```
 
 Build the IBMIJASPER commands
 
  ***(Important to CHGJOB CCSID(37) before building from SAVF)***
 
-`CHGJOB CCSID(37)`
+```CHGJOB CCSID(37)```
 
-`ADDLIBLE IBMIJASPER`
+```ADDLIBLE IBMIJASPER```
 
-`CRTCLPGM PGM(IBMIJASPER/SRCBLDC) SRCFILE(IBMIJASPER/SOURCE) SRCMBR(SRCBLDC) REPLACE(*YES)`
+```CRTCLPGM PGM(IBMIJASPER/SRCBLDC) SRCFILE(IBMIJASPER/SOURCE) SRCMBR(SRCBLDC) REPLACE(*YES)```
 
-`CALL PGM(IBMIJASPER/SRCBLDC)`
+```CALL PGM(IBMIJASPER/SRCBLDC)```
 
-The following command restores the Java objects to IFS folder: `/ibmijasper`   
-`IBMIJASPER/RSTRRE`
+The following command restores the Java objects to IFS folder: ```/ibmijasper``` 
+```IBMIJASPER/RSTRRE```
 
 If all runs successfully the IBMIJASPER library commands should be ready to use.   
 
@@ -73,13 +73,12 @@ The sample call to the RREGEN command listed below should create a sample PDF re
 
 The output file should gen generated to file name: `/tmp/EmployeeListing.pdf`
 
-`ADDLIBLE IBMIJASPER`
+```ADDLIBLE IBMIJASPER```
 
-`
-RREGEN LIBLIST(IBMIJASPER)  
-RPTNAME('/ibmijasper/reports/templates/Employee_Listing.jrxml')  
-RPTOUTPUT('/tmp/Employee_listing') OUTPUTFMT(PDF)  
-REPLACE(*YES) DSPSTDOUT(*YES)  
-`
+```
+RREGEN LIBLIST(IBMIJASPER) 
+RPTNAME('/ibmijasper/reports/templates/Employee_Listing.jrxml') 
+RPTOUTPUT('/tmp/Employee_listing') OUTPUTFMT(PDF) REPLACE(*YES) DSPSTDOUT(*YES)  
+```
 
 After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
