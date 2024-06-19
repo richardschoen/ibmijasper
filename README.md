@@ -44,7 +44,7 @@ RPG Report Engine Project
 https://github.com/phelgren/RRE    
 
 # Pre-requisites
-You must install the QShell on i library - QSHONI  
+❗ You must install the QShell on i library - QSHONI  
 https://github.com/richardschoen/qshoni
 
 # Installing IBMIJASPER library via save file and creating command objects
@@ -101,24 +101,25 @@ After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
 
 **Overview** - The RREGEN CL command can be used to execute a JasperReports JRXML report template and output the appropriate PDF or other format.   
 
-**HOSTNAME** - Enter the host name database to connect to. Use localhost for local IBM i database. Default: ```localhost```    
+**HOSTNAME - Host name** - Enter the host name database to connect to. Use localhost for local IBM i database. Default: ```localhost```    
 
-**LIBLIST** - Enter the library list for the jt400.jar connection to use. Default: ```QGPL```   
+**LIBLIST- Library list** - Enter the library list for the jt400.jar connection to use. Default: ```QGPL```   
 
-**USERNAME** - IBM i user id to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
+**USERNAME - User ID** - IBM i user id to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
 
-**PASSWORD** - IBM i password to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
+**PASSWORD - Password** - IBM i password to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
 
-**RPTNAME** - Enter the IFS file path for the JRXML template file to compile and execute.   
+**RPTNAME - Report name** - Enter the IFS file path for the JRXML template file to compile and execute.   
 
-**RPTOUTPUT** - Enter the IFS file path for the output file you would like to generate without the file extension. The file extension is derived from the Output format parameter.   
+**RPTOUTPUT - Report output without extension** - Enter the IFS file path for the output file you would like to generate without the file extension. The file extension is derived from the Output format parameter.   
 
-**OUTPUTFMT** - Specify the desired Jasper output format. Default: PDF.   
+**OUTPUTFMT - Output format** - Specify the desired Jasper output format. Default: PDF.   
 
-**REPLACE** - Replace the output file if it already exists. Default: ```*NO```    
+**REPLACE - Replace existing output file** - Replace the output file if it already exists. Default: ```*NO```    
 
-**DSPSTDOUT** - Display the outfile contents. Nice when debugging. 
+**DSPSTDOUT - Display standard output result** - Display the outfile contents. Nice when debugging. 
 
-**PRTSTDOUT** - Print STDOUT to a spool file. Use this if you want a spool file of the log output.
+**DLTSTDOUT - Delete standard output** - This option insures that the STDOUT IFS temp files get cleaned up after processing. All IFS log files get created in the /tmp/qsh directory.   
 
-**DLTSTDOUT** - This option insures that the STDOUT IFS temp files get cleaned up after processing. All IFS log files get created in the /tmp/qsh directory.   
+**PRTSTDOUT - Print standard output** - Print STDOUT to a spool file. Use this if you want a spool file of the log output.
+
