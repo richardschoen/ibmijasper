@@ -85,7 +85,9 @@ If all runs successfully the IBMIJASPER library commands should be ready to use.
 # Test RREGEN command after install initial test command
 The sample call to the RREGEN command listed below should create a sample PDF report based on the ```IBMIJASPER/EMPLOYEE``` table.   
 
-The output file should gen generated to file name: ```/tmp/EmployeeListing.pdf```
+The output file should gen generated to file name: ```/tmp/EmployeeListing.pdf```    
+
+❗For this example we left ```DSPTDOUT=*YES``` so you can see the log that gets generated. For batch or production usage you would use ```DSPSTDOUT=*NO```.   
 
 ```ADDLIBLE IBMIJASPER```
 
