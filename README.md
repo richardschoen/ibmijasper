@@ -111,7 +111,7 @@ After running the command, locate and view PDF file: `/tmp/Employee_Listing.pdf`
 
 **PASSWORD - Password** - IBM i password to use for connection. Default: ```*NONE``` which uses current job user info so no user/password required.   
 
-**RPTNAME - Report name** - Enter the IFS file path for the JRXML template file to compile and execute.   
+**RPTNAME - Report name** - Enter the IFS file path for the ```.jrxml``` template file to compile and execute. You can also specify a compiled template with a ```.jasper``` extension. Ex: ```/templates/myreport.jrxml```
 
 **RPTOUTPUT - Report output without extension** - Enter the IFS file path for the output file you would like to generate without the file extension. The file extension is derived from the Output format parameter.   
 
