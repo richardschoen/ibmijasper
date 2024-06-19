@@ -69,9 +69,9 @@ The following command restores the Java objects to IFS folder: ```/ibmijasper```
 If all runs successfully the IBMIJASPER library commands should be ready to use.   
 
 # After install initial test command
-The sample call to the RREGEN command listed below should create a sample PDF report based on the `IBMIJASPER/EMPLOYEE` table.   
+The sample call to the RREGEN command listed below should create a sample PDF report based on the ```IBMIJASPER/EMPLOYEE``` table.   
 
-The output file should gen generated to file name: `/tmp/EmployeeListing.pdf`
+The output file should gen generated to file name: ```/tmp/EmployeeListing.pdf```
 
 ```ADDLIBLE IBMIJASPER```
 
